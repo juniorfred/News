@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/cl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:background="@color/windowBackgroundAlternate">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_margin="0dp"
+            android:background="@color/colorMainToolbar"
+            android:elevation="3dp"
+            android:theme="@style/AppTheme.ActionBar"
+            app:contentInsetStartWithNavigation="@dimen/LINK_PADDING"
+            app:popupTheme="@style/AppTheme.PopupMenu"
+            app:title="@string/app_name">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/TOOLBAR_PHOTO_WIDTH"
+                    android:layout_height="@dimen/TOOLBAR_PHOTO_HEIGHT"
+                    app:cardCornerRadius="@dimen/TOOLBAR_CARD_RADIUS">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/contentLayoutToolbarImage"
+                        android:layout_width="@dimen/TOOLBAR_PHOTO_WIDTH"
+                        android:layout_height="@dimen/TOOLBAR_PHOTO_HEIGHT"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorTxt"
+                        android:text="@string/HASH"
+                        android:background="@color/colorAccent"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                </androidx.cardview.widget.CardView>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/contentLayoutRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/mainActivityToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_tooltip_bg"
+        android:layout_gravity="center_horizontal"
+        android:text=""
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="12sp"
+        android:layout_marginTop="@dimen/TOOLTIP_MARGIN_TOP"
+        android:gravity="center"
+        android:padding="4dp"
+        android:visibility="gone"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/refreshLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/custom_tooltip_bg"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/TOOLTIP_MARGIN_TOP"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/colorHint"
+            android:text="@string/REFRESHING"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/newNotification"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/red_dot"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="30dp"
+        android:visibility="gone"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

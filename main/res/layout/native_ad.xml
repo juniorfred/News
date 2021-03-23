@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.formats.UnifiedNativeAdView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:maxWidth="400dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/windowBackgroundAlternate"
+    android:padding="5dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/AD"
+            android:textColor="@color/colorTxtInverse"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:background="@color/colorNGN"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_marginBottom="5dp"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/windowBackgroundAlternate"
+            android:paddingBottom="10dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/imageCard">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/adIcon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:background="@color/windowBackgroundAlternate"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/adTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:fontFamily="@font/opensans"
+                    android:ellipsize="marquee"
+                    android:textSize="@dimen/AD_TITLE"
+                    android:textColor="@color/colorTxt"
+                    android:layout_marginTop="10dp"/>
+
+                <androidx.appcompat.widget.AppCompatRatingBar
+                    android:id="@+id/adRating"
+                    style="@style/AppTheme.CustomRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="4"
+                    android:stepSize="1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/adAdvertiser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/ADVERTIZER"
+                    android:textColor="@color/colorHint"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.google.android.gms.ads.formats.MediaView
+            android:id="@+id/adMediaView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/MEDIA_VIEW_HEIGHT"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/windowBackgroundAlternate"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+       <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/adDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTxt"
+            android:fontFamily="@font/opensans"
+            android:textSize="@dimen/DEFAULT_TXT"
+            android:layout_gravity="center_vertical"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/actionBtn"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:background="@drawable/actionbtn_selector"
+                android:textColor="@color/colorTxtInverse"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center_horizontal"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</com.google.android.gms.ads.formats.UnifiedNativeAdView>

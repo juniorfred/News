@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/alert_background"
+    android:elevation="5dp"
+    android:padding="10dp"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/hintMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/opensans"
+        android:textSize="15sp"
+        android:textColor="@color/colorTxt"
+        android:text="this is the sample hint text, lorem ipsum dolor et amiet"/>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="NAV_ITEM_PADDING">5dp</dimen>
+    <dimen name="NAV_ITEM_TEXT_SIZE">16sp</dimen>
+    <dimen name="NAV_ITEM_MARGIN">10dp</dimen>
+    <dimen name="TOOLBAR_PHOTO_WIDTH">32dp</dimen>
+    <dimen name="TOOLBAR_PHOTO_HEIGHT">32dp</dimen>
+    <dimen name="TOOLBAR_CARD_RADIUS">16dp</dimen>
+    <dimen name="SUPPORT_TEAM_PHOTO">40dp</dimen>
+    <dimen name="SUPPORT_TEAM_RADIUS">20dp</dimen>
+    <dimen name="DEFAULT_TXT">14sp</dimen>
+    <dimen name="AD_TITLE">15sp</dimen>
+    <dimen name="LINK_PADDING">10dp</dimen>
+    <dimen name="ADVERTIZER">12sp</dimen>
+    <dimen name="AD_DESCRIPTION">14sp</dimen>
+    <dimen name="MEDIA_VIEW_HEIGHT">200dp</dimen>
+    <dimen name="TOOLTIP_MARGIN_TOP">60dp</dimen>
+    <dimen name="NEWS_BANNER_SIZE">250dp</dimen>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/alert_background"
+    android:elevation="5dp"
+    android:padding="10dp"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/confirmMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/opensans"
+        android:textSize="15sp"
+        android:textColor="@color/colorTxt"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/okBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/okay_button"
+        android:textColor="@color/colorTxtInverse"
+        android:textAllCaps="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="7dp"
+        android:textSize="15sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cancelBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/transparent"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTxtInverse"
+        android:textSize="15sp" />
+
+</LinearLayout>

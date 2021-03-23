@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2979FF</color>
+    <color name="colorPrimaryDark">#66FFFFFF</color>
+    <color name="colorAccent">#2979FF</color>
+    <color name="colorTxtInverse">#FFFFFF</color>
+    <color name="colorTxt">#FFFFFF</color>
+    <color name="colorHint">#66FFFFFF</color>
+    <color name="colorTint">#99FFFFFF</color>
+    <color name="windowBackground">#202e3f</color>
+    <color name="windowBackgroundAlternate">#192431</color>
+    <color name="windowBackgroundDialog">#202e3f</color>
+    <color name="colorBreakdownStroke">@android:color/transparent</color>
+    <color name="colorCondition">#35424a</color>
+    <color name="colorSubject">#4ACFAC</color>
+    <color name="colorWithdraw">#191A24</color>
+    <color name="colorWithdrawPressed">#20222E</color>
+    <color name="colorTransferPressed">#35424a</color>
+    <color name="colorNGN">#FF6D00</color>
+    <color name="colorToolbar">@android:color/transparent</color>
+    <color name="colorMainToolbar">#202e3f</color>
+    <color name="mainMenu">#202e3f</color>
+    <color name="colorStroke">#66FFFFFF</color>
+    <color name="colorLblBackground">#192431</color>
+    <color name="colorBreakdownBackground">#202e3f</color>
+    <color name="colorLblStroke">@android:color/transparent</color>
+    <color name="colorHintAlternate">#4F4F50</color>
+    <color name="colorLight_tooltip">#1AFFFFFF</color>
+</resources>

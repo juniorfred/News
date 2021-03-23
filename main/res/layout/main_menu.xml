@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/mainMenu">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:isScrollContainer="true">
+
+
+        <LinearLayout
+            android:id="@+id/chatButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/NAV_ITEM_MARGIN">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/chatButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/LIVE_CHAT"
+                android:textSize="@dimen/NAV_ITEM_TEXT_SIZE"
+                android:drawableStart="@drawable/chat"
+                android:paddingStart="@dimen/NAV_ITEM_PADDING"
+                android:paddingEnd="@dimen/NAV_ITEM_PADDING"
+                android:drawablePadding="10dp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTxt"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/NAV_ITEM_MARGIN"
+            android:layout_marginEnd="@dimen/NAV_ITEM_MARGIN">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/notificationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NOTIFICATIONS"
+            android:textSize="@dimen/NAV_ITEM_TEXT_SIZE"
+            android:drawableStart="@drawable/bell"
+            android:paddingStart="@dimen/NAV_ITEM_PADDING"
+            android:paddingEnd="@dimen/NAV_ITEM_PADDING"
+            android:drawablePadding="10dp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTxt"
+            android:background="@android:color/transparent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end|center_vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/notificationBadge"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/chip"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/colorTxtInverse"
+                android:textSize="11sp"
+                android:text="5"
+                android:gravity="center"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/NAV_ITEM_MARGIN">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/savedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SAVED"
+                android:textSize="@dimen/NAV_ITEM_TEXT_SIZE"
+                android:drawableStart="@drawable/save"
+                android:paddingStart="@dimen/NAV_ITEM_PADDING"
+                android:paddingEnd="@dimen/NAV_ITEM_PADDING"
+                android:background="@android:color/transparent"
+                android:drawablePadding="10dp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorTxt" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

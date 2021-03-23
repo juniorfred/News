@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ex.news">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:description="@string/DESCRIPTION"
+        android:resizeableActivity="false"
+        android:usesCleartextTraffic="true"
+        android:hardwareAccelerated="true">
+
+        <service android:name="com.ex.news.VlogEventEmmitter" android:permission="android.permission.BIND_JOB_SERVICE"/>
+
+        <activity android:name="com.ex.news.MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ex.news.ActivityNotification" android:screenOrientation="portrait"/>
+        <activity android:name="com.ex.news.ActivitySaved" android:screenOrientation="portrait"/>
+        <activity android:name="com.ex.news.WelcomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ex.news.ActivityInvalidInstaller" android:screenOrientation="portrait"/>
+        <activity android:name="com.ex.news.ReadActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.SwipeExit"/>
+        <activity android:name="com.ex.news.ActivityOutdated" android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7545958636172314~9589720493"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/alert_background"
+    android:elevation="5dp"
+    android:padding="10dp"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/adRating"
+        style="@style/AppTheme.CustomRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:clickable="false"
+        android:indeterminate="true"
+        android:indeterminateDuration="@android:integer/config_mediumAnimTime"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="5"
+        android:stepSize="1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ratingMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/opensans"
+        android:textSize="15sp"
+        android:textColor="@color/colorTxt"
+        android:text="@string/REVIEW_MESSAGE"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/reviewBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/okay_button"
+        android:textColor="@color/colorTxtInverse"
+        android:textAllCaps="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="7dp"
+        android:textSize="15sp"
+        android:text="@string/RATE"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/laterBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/transparent"
+        android:textAllCaps="false"
+        android:textColor="@color/colorTxtInverse"
+        android:textSize="15sp"
+        android:text="@string/LATER"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/neverBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/transparent"
+        android:textAllCaps="false"
+        android:textColor="@color/colorHint"
+        android:textSize="15sp"
+        android:text="@string/NEVER"/>
+
+</LinearLayout>
